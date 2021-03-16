@@ -22,7 +22,7 @@ router.post("/api/workouts", ({ body }, res) => {
     });
 });
 
-router.get("/api/workouts", (req, res) => {
+router.get("/api/workouts/range", (req, res) => {
   workout.find({})
     .sort({ date: -1 })
     .then(dbworkout => {
