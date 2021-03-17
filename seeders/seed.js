@@ -3,6 +3,8 @@ let db = require("../models");
 console.log(db)
 mongoose.connect("mongodb://localhost/workouts", {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
 });
 
